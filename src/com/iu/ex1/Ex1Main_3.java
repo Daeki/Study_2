@@ -19,6 +19,7 @@ public class Ex1Main_3 {
 			Student student = new Student();
 			
 			students[i]=new Student();
+			students[i].name=sc.next();
 		}
 		
 		for(int i=0;i<students.length;i++) {
