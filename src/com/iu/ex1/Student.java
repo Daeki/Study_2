@@ -9,5 +9,8 @@ public class Student {
 	int math;
 	int total;
 	double avg;
+//	Member member;
+//	Member [] members;
+//	int [] ars;
 
 }

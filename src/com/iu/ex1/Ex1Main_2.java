@@ -6,6 +6,7 @@ public class Ex1Main_2 {
 		
 		Student st1 = new Student();
 		st1.name="iu";
+		st1.num=10;
 		Student st2 = new Student();
 		st2.name="suji";
 		
