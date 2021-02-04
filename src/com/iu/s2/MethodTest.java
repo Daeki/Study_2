@@ -13,6 +13,7 @@ public class MethodTest {
 		//객체생성, 변수선언
 		System.out.println("info 메서드 실행");
 		
+		
 		System.out.println("info 메서드 종료");
 	}
 	
@@ -28,6 +29,9 @@ public class MethodTest {
 	
 	//sayHello2
 	//hello world2 가 1번 출력
+	public void salyHello2() {
+		System.out.println("hello world2");
+	}
 	
 	
 
