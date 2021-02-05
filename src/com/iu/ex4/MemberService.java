@@ -36,5 +36,28 @@ public class MemberService {
 	//id, pw 입력
 	//매개변수로 member들을 선언
 	//검사결과를 리턴
+	public Member memberLogin(Member [] members) {
+		Scanner sc = new Scanner(System.in);
+		Member member = new Member();
+		System.out.println("Id 입력");
+		member.id = sc.nextInt();
+		System.out.println("Pw 입력");
+		member.pw = sc.nextInt();
+		Member result = null;
+		//String name=null;
+		//int index=-1;
+		for(int i=0;i<members.length;i++) {
+			if(member.id == members[i].id && member.pw==members[i].pw) {
+				//name = members[i].name;
+				//index=i;
+				result = members[i];
+				break;
+			}
+		}
+		
+		return result;
+		
+	}
+	
 
 }

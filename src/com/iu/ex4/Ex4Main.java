@@ -17,7 +17,14 @@ public class Ex4Main {
 		//memberLogin 시도
 		//로그인성공하면 000 님 로그인성공 출력
 		//로그인실패하면 로그인 실패 출력
-		
+		//String name = memberService.memberLogin(members);
+		//int index = memberService.memberLogin(members);
+		Member member = memberService.memberLogin(members);
+		if(member != null) {
+			System.out.println(member.name+" 님 로그인 성공");
+		}else {
+			System.out.println("로그인 실패");
+		}
 		
 	}
 
