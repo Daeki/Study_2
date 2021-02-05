@@ -26,8 +26,10 @@ public class Ex4Main {
 //			System.out.println("로그인 실패");
 //		}
 		
-		MemberController memberController = new MemberController();
-		memberController.start();
+		//MemberController memberController = new MemberController();
+		//memberController.start();
+		StudentController studentController = new StudentController();
+		//studentController.start();
 		
 	}
 
