@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class MemberService {
 	
+	Scanner sc;
+	
+	public MemberService() {
+		sc = new Scanner(System.in);
+	}
 	
 	//회원가입 메서드
 	//메서드명 memberJoin
@@ -12,7 +17,7 @@ public class MemberService {
 	//정보들입력
 	//회원들을 리턴
 	public Member [] memberJoin() {
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("회원수 입력");
 		int count = sc.nextInt();
 		Member [] members = new Member[count];
@@ -37,12 +42,12 @@ public class MemberService {
 	//매개변수로 member들을 선언
 	//검사결과를 리턴
 	public Member memberLogin(Member [] members) {
-		Scanner sc = new Scanner(System.in);
+		
 		Member member = new Member();
 		System.out.println("Id 입력");
-		member.id = sc.nextInt();
+		member.id = this.sc.nextInt();
 		System.out.println("Pw 입력");
-		member.pw = sc.nextInt();
+		member.pw = this.sc.nextInt();
 		Member result = null;
 		//String name=null;
 		//int index=-1;

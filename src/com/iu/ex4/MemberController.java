@@ -4,6 +4,17 @@ import java.util.Scanner;
 
 public class MemberController {
 	
+	Scanner sc;
+	MemberService memberService;
+	Member [] members;
+	StudentController studentController;
+	
+	public MemberController() {
+		sc = new Scanner(System.in);
+		memberService = new MemberService();
+		members = memberService.memberJoin();
+		studentController = new StudentController();
+	}
 	
 	//메서드명 : start
 	//memberJoin 실행(호출)
@@ -11,10 +22,6 @@ public class MemberController {
 	//
 	// 2. 종료
 	public void start() {
-		Scanner sc = new Scanner(System.in);
-		MemberService memberService = new MemberService();
-		Member [] members = memberService.memberJoin();
-		StudentController studentController = new StudentController();
 		
 		boolean check =true;
 		
@@ -27,8 +34,9 @@ public class MemberController {
 				Member member= memberService.memberLogin(members);
 				if(member != null) {
 					System.out.println(member.name+" 로그인성공");
+					
 					studentController.start();
-					break;
+	
 				}else {
 					System.out.println("로그인 실패");
 				}
