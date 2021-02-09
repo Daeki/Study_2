@@ -8,7 +8,7 @@ public class CarMain {
 		// TODO Auto-generated method stub
 		
 		Car c1 = new Car();
-		
+		c1.company="Benz";
 		
 		//Car c2 = new Car("Red", 2);
 		
